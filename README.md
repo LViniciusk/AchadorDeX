@@ -1,3 +1,3 @@
 # AchadorDeX
  
-lviniciusk.github.io/AchadorDeX
+https://lviniciusk.github.io/AchadorDeX
