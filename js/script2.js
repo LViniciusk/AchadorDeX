@@ -39,7 +39,7 @@ function uploadImage(e){
             "Data": "Teste",
             "Type": "outros",
         }
-        fetch("https://6fa4c91b-7263-4580-971f-8b9c4e6c8cd5-00-ht2twr549694.riker.replit.dev/add", {
+        fetch("https://api-felina.up.railway.app/add", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
