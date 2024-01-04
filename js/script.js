@@ -64,7 +64,7 @@ function reverse(){
 
 async function getItem(id) {
 
-    const APIResponse = await fetch(`https://6fa4c91b-7263-4580-971f-8b9c4e6c8cd5-00-ht2twr549694.riker.replit.dev/msg/${id}`);
+    const APIResponse = await fetch(`https://api-felina.up.railway.app/msg/${id}`);
 
     if (APIResponse.status == 200   ) {
         const data = await APIResponse.json();
@@ -74,7 +74,7 @@ async function getItem(id) {
 
 async function getMax() {
 
-    const APIResponse = await fetch(`https://6fa4c91b-7263-4580-971f-8b9c4e6c8cd5-00-ht2twr549694.riker.replit.dev/`);
+    const APIResponse = await fetch(`https://api-felina.up.railway.app/`);
 
     if (APIResponse.status == 200) {
         const data = await APIResponse.json();
