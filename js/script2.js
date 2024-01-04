@@ -39,11 +39,10 @@ function uploadImage(e){
             "Data": "Teste",
             "Type": "outros",
         }
-        fetch("http://127.0.0.1:8000/add", {
+        fetch("https://6fa4c91b-7263-4580-971f-8b9c4e6c8cd5-00-ht2twr549694.riker.replit.dev/add", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
-                'Access-Control-Allow-Origin': 'http://127.0.0.1:5500',
                 'Accept': 'application/json',
                 'Access-Control-Allow-Credentials': 'true',
             },
