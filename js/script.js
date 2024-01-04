@@ -1,6 +1,6 @@
 
 const itemList = []
-const recent = document.querySelector(".btn")
+const recent = document.querySelector(".btnR")
 let rct = 1;
 
 recent.addEventListener("click", reverse)
