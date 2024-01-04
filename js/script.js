@@ -64,7 +64,7 @@ function reverse(){
 
 async function getItem(id) {
 
-    const APIResponse = await fetch(`http://127.0.0.1:8000/msg/${id}`);
+    const APIResponse = await fetch(`https://6fa4c91b-7263-4580-971f-8b9c4e6c8cd5-00-ht2twr549694.riker.replit.dev/msg/${id}`);
 
     if (APIResponse.status == 200   ) {
         const data = await APIResponse.json();
@@ -74,7 +74,7 @@ async function getItem(id) {
 
 async function getMax() {
 
-    const APIResponse = await fetch(`http://127.0.0.1:8000/`);
+    const APIResponse = await fetch(`https://6fa4c91b-7263-4580-971f-8b9c4e6c8cd5-00-ht2twr549694.riker.replit.dev/`);
 
     if (APIResponse.status == 200) {
         const data = await APIResponse.json();
