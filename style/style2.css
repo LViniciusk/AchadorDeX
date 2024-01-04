@@ -51,7 +51,7 @@ img{
     cursor: pointer;
     transition: background 0.3s;
 }
-.btn:hover{
+.btnR:hover{
     background: #18275b;
 }
 
