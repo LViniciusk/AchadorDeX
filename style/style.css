@@ -126,6 +126,10 @@ body{
     font-weight: 600;
 }
 
+.btn:hover{
+    background: #18275b;
+}
+
 .wrapper .btn2{
     display: block;
     margin: auto;

@@ -21,7 +21,7 @@ nav{
     background-color: #2F417F;
 }
 
-img{
+.filter-gallery img{
     width: 100%;
     max-height: 327.79px;
 }
@@ -46,6 +46,7 @@ img{
 }
 
 p {
+    margin-top: 20px;
     color: #fff;
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -169,11 +170,12 @@ p {
 
 .section-title h1{
     display: inline-block;
-    font-size: 100px;
+    font-size: 64px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #000000;
+    color: #fff;
     position: relative;
+    border-bottom: #fff 3px solid;
 }
 
 .text-center{
@@ -211,12 +213,14 @@ p {
 
 .filter-gallery .item{
     flex: 0 0 25%;
+    max-height: 387px;
     max-width: 25%;
     position: relative;
     padding: 8px;
 }
 
 .filter-gallery .item .inner{
+    cursor: pointer;
     width: 100%;
     height: 100%;
     backdrop-filter: blur(16px) saturate(180%);
@@ -231,6 +235,17 @@ p {
     align-items: center;
     justify-content:center;
     text-align: center;
+
+}
+
+.filter-gallery .item .inner:hover{
+    outline: .1rem solid #222;
+    outline-offset: 0;
+
+}
+
+.filter-gallery .item .inner:hover{
+    transform: scale(0.99);
 }
 
 .filter-gallery .item img{
@@ -240,6 +255,106 @@ p {
     min-height: 100%;
     display: block;
 }
+
+
+
+
+
+/*MODAL*/
+
+.modal *{
+    display: block;
+}
+
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0%;
+}
+
+
+.modal.active{
+    display: block;
+}
+
+.preview{
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); 
+    padding-top: 4em;
+}
+
+.preview .fa-times{
+    position: relative;
+    top: 0;
+    left: 17%;
+    cursor: pointer;
+    color: #000000;
+    font-size: 4rem;
+}
+
+.modal img{
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+    margin-bottom: 40px;
+}
+
+.modal button{
+    margin: auto;
+    min-width: 15em;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 1.2em;
+    min-height: 2em;
+    margin-bottom: 1em;
+}
+
+#resgatar{
+    background: #2F417F;
+}
+
+#excluir{
+    background: #cd1515;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media(max-width: 767px){
