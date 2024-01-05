@@ -47,6 +47,8 @@ function reverse(){
         rct = 1
     }
 
+    refresh()
+
 }
 
 
@@ -109,7 +111,7 @@ async function fillPage(){
             
         }
     }
-
+    refresh()
 }
 
 fillPage()
@@ -173,4 +175,8 @@ for(let i = 0; i < filterButtons.length; i++){
 
     })
 }
+
+
+
+
 

@@ -1,3 +1,30 @@
+function getDate(){
+    //Data
+
+    const DT = new Date()
+
+    const dia = String(DT.getDate()).padStart(2, '0')
+    const mes = String(DT.getMonth()+1).padStart(2, '0')
+    const ano = DT.getFullYear()
+
+    const hora = String(DT.getHours()).padStart(2, '0')
+    const minuto = String(DT.getMinutes()).padStart(2, '0')
+
+
+    const dataAtual = `${dia}/${mes}/${ano} - ${hora}:${minuto}`
+    console.log(dataAtual);
+    return dataAtual;
+}
+
+
+
+
+
+
+
+
+
+
 //API
 const CLIENT_ID = "2595b30a05bc570";
 const form = document.querySelector("#upload-form");
@@ -21,6 +48,7 @@ function onSucess(result){
 function uploadImage(e){
     e.preventDefault();
     
+    const Type = document.querySelector("#idtipo")
     const file = document.querySelector("#file");
     const data = new FormData();
     data.append('image', file.files[0]);
@@ -36,15 +64,14 @@ function uploadImage(e){
     .then(dt => {
         const info = {
             "URL": dt.data.link,
-            "Data": "Teste",
-            "Type": "outros",
+            "Data": getDate(),
+            "Type": Type.value
         }
-        fetch("https://api-felina.up.railway.app/add", {
+        fetch("https://api-felina.up.railway.app/add/", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json',
-                'Access-Control-Allow-Credentials': 'true',
             },
             body: JSON.stringify(info)
         }).then(res => res.json())
@@ -53,7 +80,6 @@ function uploadImage(e){
     })
     .catch(console.error);
 }
-
 
 
 // rcZSwIy9Nzs2mD8  -- ALBUM HASH  //   QSdjMB2   -- ID 
