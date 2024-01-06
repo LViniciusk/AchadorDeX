@@ -22,11 +22,14 @@ function getDate(){
 
 
 let Type = "outros"
+let url = ""
+let it;
 
 function refresh(){
     document.querySelectorAll(".item").forEach(item => {
         item.onclick = () => {
-            let url = item.children[0].children[0].src
+            it = item
+            url = item.children[0].children[0].src
             modalImg.src = url;
             Type = item.dataset.id;
     
@@ -37,6 +40,10 @@ function refresh(){
 
 function deleteItem(e){
     e.preventDefault()
+
+    it.remove()
+    modalBox.classList.remove("active")
+
     const info = {
         "URL": modalImg.src,
         "Data": getDate(),
@@ -57,6 +64,10 @@ function deleteItem(e){
 
 function claimItem(e){
     e.preventDefault()
+
+    it.remove()
+    modalBox.classList.remove("active")
+
     const info = {
         "URL": modalImg.src,
         "Data": getDate(),
