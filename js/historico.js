@@ -39,7 +39,6 @@ async function fillPage(){
     let total = await getMax();
 
     if(total.Items == 0){
-        let item = await getItem(i);
         let col = document.createElement("div")
         col.classList.add("col")
         col.classList.add("d-flex")
