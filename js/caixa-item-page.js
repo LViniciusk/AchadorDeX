@@ -43,7 +43,7 @@ function deleteItem(e){
         "Type": Type,
     }
 
-    fetch("http://localhost:8000/del/", {
+    fetch("https://api-felina.up.railway.app/del/", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ function claimItem(e){
         "Type": Type,
     }
 
-    fetch("http://localhost:8000/claim/", {
+    fetch("https://api-felina.up.railway.app/claim/", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',

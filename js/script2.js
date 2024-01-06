@@ -67,7 +67,7 @@ function uploadImage(e){
             "Data": getDate(),
             "Type": Type.value
         }
-        fetch("http://localhost:8000/add/", {
+        fetch("https://api-felina.up.railway.app/add/", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
