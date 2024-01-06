@@ -66,7 +66,7 @@ function reverse(){
 
 async function getItem(id) {
 
-    const APIResponse = await fetch(`https://api-felina.up.railway.app/msg/${id}`);
+    const APIResponse = await fetch(`http://localhost:8000/msg/${id}`);
 
     if (APIResponse.status == 200   ) {
         const data = await APIResponse.json();
@@ -76,7 +76,7 @@ async function getItem(id) {
 
 async function getMax() {
 
-    const APIResponse = await fetch(`https://api-felina.up.railway.app/`);
+    const APIResponse = await fetch(`http://localhost:8000/`);
 
     if (APIResponse.status == 200) {
         const data = await APIResponse.json();

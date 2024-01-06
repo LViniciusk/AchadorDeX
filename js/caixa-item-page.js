@@ -43,7 +43,27 @@ function deleteItem(e){
         "Type": Type,
     }
 
-    fetch("https://api-felina.up.railway.app/del/", {
+    fetch("http://localhost:8000/del/", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+            },
+            body: JSON.stringify(info)
+        }).then(res => res.json())
+        .then(console.log)
+        console.log(info);
+}
+
+function claimItem(e){
+    e.preventDefault()
+    const info = {
+        "URL": modalImg.src,
+        "Data": getDate(),
+        "Type": Type,
+    }
+
+    fetch("http://localhost:8000/claim/", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -62,3 +82,4 @@ closeBtn.onclick = () =>{
 } 
 
 document.querySelector("#excluir").addEventListener('click', deleteItem)
+document.querySelector("#resgatar").addEventListener('click', claimItem)
