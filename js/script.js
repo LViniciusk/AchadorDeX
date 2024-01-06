@@ -36,6 +36,7 @@ function reverse(){
         inner.appendChild(p)
         itemD.appendChild(inner)
         f.appendChild(itemD)
+        refresh()
     })
     itemList.splice(0)
 
@@ -48,6 +49,8 @@ function reverse(){
     }
 
     refresh()
+
+    
 
 }
 
