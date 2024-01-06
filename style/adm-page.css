@@ -1,44 +1,43 @@
-*{
+* {
     box-sizing: border-box;
-    overflow: hidden;
     margin: 0px;
     padding: 0px;
-}
-
-body{
+  }
+  
+  body {
     margin: 0;
     background-color: #fff;
-}
-
-.container{
+  }
+  
+  .container {
     width: 1400px;
     margin: auto;
     display: block;
     margin-top: 10%;
-}
-
-nav{
-    background-color: #2F417F;
-}
-
-img{
+  }
+  
+  nav {
+    background-color: #2f417f;
+  }
+  
+  img {
     width: 100%;
     max-height: 327.79px;
-}
-
-.logo{
+  }
+  
+  .logo {
     width: 100px;
     position: relative;
     top: 17px;
-}
-
-.nav{
+  }
+  
+  .nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-}
-
-.btn{
+  }
+  
+  .btn {
     min-width: 25em;
     margin: 2.5em;
     font-size: 18px;
@@ -50,35 +49,35 @@ img{
     padding: 1em;
     cursor: pointer;
     transition: background 0.3s;
-}
-
-.grid{
+  }
+  
+  .grid {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-
-.sair{
+  }
+  
+  .sair {
     background: #6576b2;
-}
-
-.btnR:hover{
+  }
+  
+  .btnR:hover {
     background: #18275b;
-}
-
-
-.row{
+  }
+  
+  .row {
     display: flex;
     flex-wrap: wrap;
-}
-
-.section-title{
+    width: 100%;
+  }
+  
+  .section-title {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
-}
-
-.section-title h1{
+  }
+  
+  .section-title h1 {
     display: inline-block;
     font-size: 64px;
     text-transform: uppercase;
@@ -86,8 +85,21 @@ img{
     color: #fff;
     position: relative;
     border-bottom: #fff 3px solid;
-}
-
-.text-center{
+  }
+  
+  .text-center {
     text-align: center;
-}
+  }
+  
+  .rogerio {
+    background-color: #a8adbd;
+    height: 80px;
+    border: black 1px solid;
+  }
+  .marta {
+    width: 10%;
+    height: 100%;
+  }
+  .claudio {
+    width: 75%;
+  }
