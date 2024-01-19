@@ -98,6 +98,12 @@ async function fillPage(){
             let p3 = document.createElement("p")
             p3.innerText = `Data: ${item.Data}`
 
+            if(item.Processo == "Resgatado"){
+                col.style = "background-color: #15d85c72;"
+            }else{
+                col.style = "background-color: #d8151572;"
+            }
+
             info.appendChild(p1)
             info.appendChild(p2)
             info.appendChild(p3)

@@ -5,6 +5,19 @@ let rct = 1;
 
 recent.addEventListener("click", reverse)
 
+function refresh(){
+    document.querySelectorAll(".item").forEach(item => {
+        item.onclick = () => {
+            it = item
+            url = item.children[0].children[0].src
+            modalImg.src = url;
+            Type = item.dataset.id;
+    
+            modalBox.classList.add("active")
+        }
+    })
+}
+
 function reverse(){
     const itList = document.querySelectorAll(".item")
     const fGallery = document.querySelector(".filter-gallery")
@@ -53,6 +66,8 @@ function reverse(){
     
 
 }
+
+
 
 
 
